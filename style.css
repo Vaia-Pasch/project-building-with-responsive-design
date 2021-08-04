@@ -1,0 +1,248 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#burger-menu {
+    visibility: hidden;
+}
+
+img {
+    width: 50px;
+    margin-top: 20px;  
+}
+
+p { 
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin-top: 30px;
+    background-color: rgb(236, 252, 9);
+    height: 30px;
+    
+}
+ul {
+    margin-top: -30px;
+    list-style-type: none; 
+    overflow: hidden;
+    text-align: center;
+    position:relative;
+    }
+    
+    ul li{
+    display: inline-block;
+    float: none;
+    
+    }
+
+    li a {
+    display: block;
+    color: rgb(75, 74, 74);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; 
+    }
+
+.container {
+        display: grid;
+        grid-template-areas: 
+        "box1 box1 box2 box3"
+        "box1 box1 box5 box5"
+        "box4 box4 box5 box5";
+        /* width: 100%; */
+        height: 500px;
+        grid-gap: 10px;
+        margin: 40px
+    }
+.box1 {
+        background-color: brown;
+        grid-area: box1;
+    }
+    
+.box2 {
+        background-color: burlywood;
+        grid-area: box2;
+    }
+    
+.box3 {
+        background-color: crimson;
+        grid-area: box3;
+    }
+    
+.box4 {
+        background-color: darkolivegreen;
+        grid-area: box4;
+    }
+    
+.box5 {
+        background-color: darkslategray;
+        grid-area: box5;
+    }    
+
+    @media screen and (max-width: 1680px) {
+
+		.container{
+			width: 100%;
+			max-width: 100rem;
+			min-width: 80rem;
+		}
+
+		.container {
+			width: 60rem;
+		}
+
+		.container {
+			width: 40rem;
+		}
+
+		.container{
+			width: 20rem;
+		}
+
+		.container {
+			width: 80rem;
+		}
+
+	}
+
+	@media screen and (max-width: 1280px) {
+    
+		.container{
+			width: 100%;
+			max-width: 81.25rem;
+			min-width: 65rem;
+		}
+
+		.container{
+			width: 48.75rem;
+		}
+
+		.container{
+			width: 32.5rem;
+		}
+
+		.container{
+			width: 16.25rem;
+		}
+
+		.container {
+			width: 65rem;
+		}
+
+	}
+
+	@media screen and (max-width: 980px) {
+       
+		.container{
+			width: 100%;
+			max-width: 112.5%;
+			min-width: 90%;
+		}
+
+		.container{
+			width: 67.5%;
+		}
+
+		.container{
+			width: 45%;
+		}
+
+		.container {
+			width: 22.5%;
+		}
+
+		.container {
+			width: 90%;
+		}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+        #main-menu, p {
+            visibility: hidden;
+        }
+
+        #burger-menu {
+            visibility: visible;
+        }
+		.container{
+			width: 100%;
+			max-width: 112.5%;
+			min-width: 90%;
+		}
+
+		.container{
+			width: 67.5%;
+		}
+
+		.container{
+			width: 45%;
+		}
+
+		.container{
+			width: 22.5%;
+		}
+
+		.container {
+			width: 90% !important;
+		}
+
+	}
+
+    @media screen and (max-width:500px) {
+
+       
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+        .container{
+            width: 100%;
+            max-width: 100rem;
+            min-width: 80rem;
+        }
+    
+        .container {
+            width: 60rem;
+        }
+    
+        .container {
+            width: 40rem;
+        }
+    
+        .container{
+            width: 20rem;
+        }
+    
+        .container {
+            width: 80rem;
+        }
+
+	@media screen and (max-width: 480px) {
+
+		.container {
+			width: 100%;
+			max-width: 112.5%;
+			min-width: 90%;
+		}
+
+		.container{
+			width: 67.5%;
+		}
+
+		.container {
+			width: 45%;
+		}
+
+		.container{
+			width: 22.5%;
+		}
+
+		.container {
+			width: 90% !important;
+		}
+
+	}    
